@@ -20,6 +20,8 @@ function Header() {
             <Link to="/product">Products</Link>
             <Link to="/category">Category</Link>
             <Link to="/admin/dashboard">Admin</Link>
+            <Link to="/video">Prime Video</Link>
+            <Link to="/weather">Weather</Link>
 
             <NavDropdown title="User Options" id="collasible-nav-dropdown" >
               {(!user || !isLoggedIn)}

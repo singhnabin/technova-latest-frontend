@@ -9,7 +9,7 @@ export const getOrderStatus = progress => {
     if (progress > 20 && progress <= 50) return "Order is on transit";
     if (progress > 50 && progress <= 80) return "Order is 1 day behind";
     if (progress > 80 && progress <= 95) return "Order is 5 block away";
-    if (progress === 100) return "Delivered at you door.";
+    if (progress == 100) return "Delivered at you door.";
 
 }
 

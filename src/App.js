@@ -27,6 +27,8 @@ import CartNew from './Component/cart/CartNew';
 import Index from './Component/admin/Index';
 import PrivateRoute from './Component/hoc/PrivateRoute';
 import TrackOrder from './Component/user/TrackOrder';
+import TechnovaPrime from './Component/micorfrontend/TechnovaPrime';
+import Weather from './Component/micorfrontend/Weather';
 
 function App() {
   const [cartItems, setCartItems] = React.useState([]);
@@ -92,6 +94,8 @@ function App() {
                 <Route exact path="/productDelete/:proId" component={DeleteProduct}></Route>
                 <Route exact path="/signup" component={Signup}></Route>
                 <Route exact path="/login" component={Login}></Route>
+                <Route exact path="/video" component={TechnovaPrime}></Route>
+                <Route exact path="/weather" component={Weather}></Route>
               </div>
             </CartContext.Provider>
           </Switch>
